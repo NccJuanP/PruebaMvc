@@ -1,0 +1,22 @@
+<h1 class="text-center">Information about product @Model.Name</h1>
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3>User Detaills</h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Id: </strong>@Model.Id</li>
+                    <li class="list-group-item"><strong>Name: </strong>@Model.Name</li>
+                    <li class="list-group-item"><strong>Description: </strong>@Model.Description</li>
+                    <li class="list-group-item"><strong>Price: </strong>$@Model.Price</li>
+                    <li class="list-group-item"><strong>Amount: </strong>@Model.Amount</li>
+                    <li class="list-group-item"><strong>Expiration Date: </strong>@Model.ExpirationDate.ToString("yyyy-MM-dd")</li>
+                    <li class="list-group-item"><strong>ID User: </strong>@Model.UserId</li>
+                </ul>
+            </div>
+        </div>
+        <a asp-action="Index" asp-controller="Products" class="btn btn-primary">Back</a>
+    </div>
+</div>
