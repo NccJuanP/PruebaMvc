@@ -17,12 +17,6 @@ namespace PruebaMvc.Controllers{
             return View(await _context.Users.ToListAsync());
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Index(string buscar){
-            Console.WriteLine(buscar);
-                var users = await _context.Users.FirstOrDefaultAsync(m => m.Names == buscar);
-                return View(users);
-        }
 
     [HttpGet]
         public IActionResult Detaills(int? id){

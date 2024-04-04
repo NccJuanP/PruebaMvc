@@ -2449,24 +2449,31 @@
     ]
   },
   "packageFolders": {
-    "/home/riwip5-018/.nuget/packages/": {}
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/riwip5-018/Documents/juan pablo/c#/PruebaMvc/PruebaMvc.csproj",
+      "projectUniqueName": "C:\\Users\\Administrador\\Downloads\\github\\PruebaMvc\\PruebaMvc.csproj",
       "projectName": "PruebaMvc",
-      "projectPath": "/home/riwip5-018/Documents/juan pablo/c#/PruebaMvc/PruebaMvc.csproj",
-      "packagesPath": "/home/riwip5-018/.nuget/packages/",
-      "outputPath": "/home/riwip5-018/Documents/juan pablo/c#/PruebaMvc/obj/",
+      "projectPath": "C:\\Users\\Administrador\\Downloads\\github\\PruebaMvc\\PruebaMvc.csproj",
+      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrador\\Downloads\\github\\PruebaMvc\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/riwip5-018/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2479,6 +2486,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2509,7 +2521,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
