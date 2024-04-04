@@ -12,9 +12,13 @@ namespace PruebaMvc.Controllers{
             _context = context;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Index(){
-            return View(await _context.Users.ToListAsync());
+        public async Task<IActionResult> Index(string search){
+            var users = from user in _context.Users select user;
+            users = users.OrderBy(u =>u.Names);
+            if(!string.IsNullOrEmpty(search)){
+                users = users.Where(u => u.Names.Equals(search));
+            }
+            return View(await users.ToArrayAsync());
         }
 
 
