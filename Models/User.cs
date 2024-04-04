@@ -10,7 +10,7 @@ namespace PruebaMvc.Models{
         public string LastNames { get; set; }
         public string Email { get; set; }
         public System.DateTime BirthDate { get; set; }
-        public string Adress { get; set; }
+        public string Address { get; set; }
         public string Phone { get; set; }
     }
 }

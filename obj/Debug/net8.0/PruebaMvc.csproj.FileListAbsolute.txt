@@ -57,3 +57,4 @@
 /home/riwip5-018/Documents/juan pablo/c#/PruebaMvc/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 /home/riwip5-018/Documents/juan pablo/c#/PruebaMvc/obj/Debug/net8.0/PruebaMvc.csproj.AssemblyReference.cache
 /home/riwip5-018/Documents/juan pablo/c#/PruebaMvc/obj/Debug/net8.0/PruebaMvc.csproj.CopyComplete
+/home/riwip5-018/Documents/juan pablo/c#/PruebaMvc/obj/Debug/net8.0/PruebaMvc.sourcelink.json

@@ -1,0 +1,30 @@
+@model PruebaMvc.Models.User
+
+<form asp-action="Create" method="POST">
+    <div asp-validation-summary="ModelOnly"></div>
+  <div class="mb-3">
+    <label asp-for="Names" class="form-label">Names</label>
+    <input asp-for="Names" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label asp-for="LastNames" class="form-label">Last Names</label>
+    <input asp-for="LastNames" type="text" class="form-control" id="LastNames">
+  </div>
+  <div class="mb-3">
+    <label asp-for="Email" class="form-label">Email</label>
+    <input asp-for="Email" type="email" class="form-control" id="Email">
+  </div>
+  <div class="mb-3">
+    <label asp-for="BirthDate" class="form-label">Birth Date</label>
+    <input asp-for="BirthDate" type="Date" class="form-control" id="BirthDate">
+  </div>
+  <div class="mb-3">
+    <label asp-for="Address" class="form-label">Address</label>
+    <input asp-for="Address" class="form-control" id="Address">
+  </div>
+  <div class="mb-3">
+    <label asp-for="Phone" class="form-label">Phone</label>
+    <input asp-for="Phone"  type="text" class="form-control" id="Phone">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
