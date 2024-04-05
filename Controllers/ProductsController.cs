@@ -1,4 +1,3 @@
-using Microsoft.EntityFrameworkCore;
 using PruebaMvc.Data;
 using Microsoft.AspNetCore.Mvc;
 
