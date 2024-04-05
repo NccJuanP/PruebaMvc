@@ -1,5 +1,6 @@
 using PruebaMvc.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace PruebaMvc.Controllers{
     public class ProductsController : Controller{

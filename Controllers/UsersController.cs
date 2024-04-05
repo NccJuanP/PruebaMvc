@@ -12,9 +12,13 @@ namespace PruebaMvc.Controllers{
             _context = context;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Index(){
-            return View(await _context.Users.ToListAsync());
+        public async Task<IActionResult> Index(string search){
+            var users = from user in _context.Users select user;
+            users = users.OrderBy(u =>u.Names);
+            if(!string.IsNullOrEmpty(search)){
+                users = users.Where(u => u.Names.Contains(search));
+            }
+            return View(await users.ToArrayAsync());
         }
 
 
@@ -46,6 +50,22 @@ namespace PruebaMvc.Controllers{
                 return RedirectToAction("Index");
             
         }
+
+        [HttpGet]
+        public IActionResult Edit(int id){
+            var user = _context.Users.Find(id);
+            return View(user);
+        }
+
+        [HttpPost]
+    public async Task <IActionResult> Editar(User user){
+        if(ModelState.IsValid){
+            _context.Update(user);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+        return View();
+    }
 
     }
 
